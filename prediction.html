@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <body background="static/yonex.jpg"></body>
+
+    <h2 style="color:rgb(0, 0, 0);"> Review: </h2>
+   <h3 style="color:rgb(112, 0, 203);">{{ review }}</h3><br>
+   
+    {% if review %}
+        <h2 style="color:rgb(0, 0, 0);">Prediction: </h2>
+        <h3 style="color:rgb(220, 230, 89);">{{ prediction }}</h3>
+    {% else %}
+        <div class="no-matches">Review not provided</div>
+    {% endif %}<br>
+
+<a href="/">Go back</a>
+
+</body>
+</html>
